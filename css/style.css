@@ -1,0 +1,175 @@
+
+
+/* testiranje text */
+.h1-head { color: #ffffff; font-family: 'Lato', sans-serif; font-size: 54px; font-weight: 300; line-height: 58px; margin: 0 0 58px; }
+
+.ptext{ color: #adb7bd; font-family: 'Lucida Sans', Arial, sans-serif; font-size: 16px; line-height: 26px; text-indent: 30px; margin: 0; }
+
+.py-test{
+    position: relative;
+}
+
+.card-sizing{
+    height: 1000px;
+}
+
+
+.Headerd2{
+    display: flex;
+    right: 100px;
+
+}
+/*testiranje ended*/
+
+.w-h{
+    height: 480px !important;
+}
+
+
+.py-low{
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.sizing{
+    width: 18rem;
+}
+
+.py-maximim{
+    padding-top: 11rem !important;
+    padding-bottom: 21.5rem !important;
+}
+
+.bk-img-cst{
+    background-image: url(https://4kwallpapers.com/images/wallpapers/abt-audi-rs6-legacy-5120x2880-11398.jpg);
+    background-size: cover;
+}
+
+/*custom padding za top and bottom da je 11 sa 13 rem*/
+.py-max{
+    padding-top: 11rem !important;
+    padding-bottom: 13rem !important;
+}
+.py-maxim{
+    padding-top: 11rem !important;
+    padding-bottom: 18rem !important;
+}
+
+.checkboxFix{
+    margin-left: 0% !important;
+    float: none !important;
+}
+
+/* custom font za nav*/
+.top-nav1{
+    font-size: 12px !important;
+}
+/* background za secondary nav*/
+.bg-red{
+    background-color: red;
+}
+/* takoder font za nav*/
+.font-topnav{
+    font-size: 10px !important;
+    color: black !important;
+}
+/* custom font size */
+.fs-7{
+    font-size: 12px;
+}
+/* linije za cards*/
+.lines-div{
+    border:1px solid rgba(0, 0, 0, .15);
+}
+
+/*Glavna slika na main page bk*/
+.bg-image{
+    background-image: url(https://www.topgear.com/sites/default/files/2023/05/32748-TTRSICONICDEANSMITH037_0.jpg);
+    background-size: 100%;
+}
+/* Glavni dio About background image auta in blurr*/
+.bg-imageabout{
+    background-image: url(https://www.carscoops.com/wp-content/uploads/2015/10/aeb7ae0b-vw-r32-8.jpg);
+    background-size: 100%;
+    filter:  blur(10px);
+    width: 100%;
+    height: 90%;
+    position: absolute;
+
+}
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: #60a3bc;
+    padding: 10px;
+    text-align: center;
+}
+
+.brand {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: #60a3bc;
+    padding: 10px;
+    text-align: center;
+}
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.gradient-custom-2{
+    background-color: #e22016 ;
+    
+}
+
+.bk-color{
+    background-color: gray;
+}
+
+.py-custom{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.card-size-image{
+    width: 640px;
+    height: 320px;
+    text-align: center;
+
+}
+
+.bk-img-custom-2{
+    background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/230110115045-01-office-space-workers-stock.jpeg?c=original);
+    background-size: cover;
+    filter: brightness(50%);
+    position: relative;
+}
+
+.fix{
+    top: 10%;
+    position: absolute;
+}
+
+.py-mox{
+    padding-top: 25rem !important;
+    padding-bottom: 23rem !important;
+}
+
+.card-mg{
+    text-align: center;
+    width: 280px;
+    height: 180px;
+}
