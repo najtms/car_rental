@@ -1,0 +1,166 @@
+<section class="">
+  <div class="container-xl py-3">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-white">
+          <div class="row g-0">
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                  <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                    <h4 class="mb-4">Ivox Car Rental</h4>
+                    <p class="small mb-0">Welcome to IVox Car Rental, where every journey is a symphony of comfort, style, and unparalleled service. At IVox, we don't just offer cars; we provide an experience that resonates with your travel aspirations.</p>
+                      <div class="text-center pt-5 mb-4 pb-1">
+                          <a class="btn btn-primary btn-block btn-lg" href="#login" role="button">Sign in</a>
+                        </div>
+                  </div>
+              
+                </div>
+            <div class="col-lg-6 bg-dark">
+              <div class="card-body p-md-5 mx-md-4">
+
+                <div class="text-center">
+                  <img src="https://i.imgur.com/PorWFmP.png"
+                    style="width: 185px;" alt="logo">
+                  <h4 class="mt-1 mb-5 pb-1">Ivox Car Rental</h4>
+                </div>
+
+                <form class="form" id="formular" method="post">
+                  <p>Please create your account</p>
+
+                  <div class="form-outline mb-4">
+                      <label class="pb-1"> Username</label>
+                    <input 
+                    type="username"
+                    name="username"
+                    id="username" class="form-control" 
+                    placeholder="Please enter Username" 
+                    />
+                  </div>
+
+                  <div class="form-outline mb-4">
+                      <label class="pb-1"> Email</label>
+                    <input 
+                    type="email" 
+                    name="email"
+                    id="email" 
+                    class="form-control" 
+                    placeholder="Please enter Email"/>
+                  </div>
+                  <div class="form-outline mb-4">
+                      <label class="pb-1">Password</label>
+                      <input 
+                      type="password" 
+                      id="password" 
+                      name="password"
+                      class="form-control" 
+                      placeholder="Please enter Password"/>
+                  </div>
+                  <div class="form-outline mb-4">
+                      <label class="pb-1">Confirm Password</label>
+                      <input 
+                      name="confirm_password"
+                      type="password" 
+                      id="confirm_password" 
+                      class="form-control" 
+                      placeholder="Please re-enter Password"/>
+                  </div>
+
+                  <div class="text-center pt-1 mb-4 pb-1">
+                    <button class="btn btn-primary btn-block btn-lg gradient-custom-2" type="submit">Create account</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous">
+</script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
+integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer">
+</script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"
+integrity="sha512-XZEy8UQ9rngkxQVugAdOuBRDmJ5N4vCuNXCh8KlniZgDKTvf7zl75QBtaVG1lEhMFe2a2DuA22nZYY+qsI2/xA=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+
+<script>
+  $(document).ready(function() {
+    $.validator.addMethod("passwordPattern", function(value, element) {
+        return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,}$/.test(value);
+    }, "Password must contain a UPPER Case letter and any Symbol");
+
+    $("#formular").validate({
+        rules: {
+            username: {
+                required: true,
+                minlength: 3,
+            },
+            email: {
+                required: true,
+                email: true,
+            },
+            password: {
+                required: true,
+                minlength: 6,
+                passwordPattern: true 
+            },
+            confirm_password: {
+                required: true,
+                minlength: 6,
+                equalTo: "#password",
+            },
+        },
+        messages: {
+            username: {
+                required: "Please enter a username",
+                minlength: "Username must be at least 3 characters long",
+            },
+            email: {
+                required: "Please enter your email",
+                email: "Please enter a valid email address",
+            },
+            password: {
+                required: "Please enter a password",
+                minlength: "Password must be at least 6 characters long",
+            },
+            confirm_password: {
+                required: "Please confirm your password",
+                minlength: "Password must be at least 6 characters long",
+                equalTo: "Passwords do not match",
+            },
+        },
+        errorElement: "span",
+        errorPlacement: function(error, element) {
+            error.addClass("invalid-feedback");
+            error.insertAfter(element);
+            element.closest(".form-outline").addClass("error");
+        },
+        highlight: function(element) {
+            $(element).closest(".form-outline").addClass("error");
+        },
+        unhighlight: function(element) {
+            $(element).closest(".form-outline").removeClass("error");
+        },
+        submitHandler: function(form) {
+            var formData = $(form).serialize();
+            
+            console.log("Form data:", formData);
+
+        }
+    });
+});
+
+</script>
