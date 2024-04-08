@@ -1,0 +1,110 @@
+{
+  "Alfa Romeo 147": {
+    "image": "https://static.carfromjapan.com/spec_2791190e-f84e-42e4-b5ae-d40bc46332cb_640_0",
+    "engine": "1900cc",
+    "kilometers": "220,000 km",
+    "fuelType": "Diesel",
+    "transmission": "Manual",
+    "vehicleType": "Hatchback",
+    "seats": 4
+  },
+  "Audi TT": {
+    "image": "https://freepngimg.com/save/31679-audi/440x247",
+    "engine": "2000cc",
+    "kilometers": "150,000 km",
+    "fuelType": "Petrol",
+    "transmission": "Automatic",
+    "vehicleType": "Sports Car",
+    "seats": 2
+  },
+  "Audi RS6 Avant": {
+    "image": "https://imgd.aeplcdn.com/642x336/ec/EF/B6/18994/img/m/Audi-RS6-Right-Front-Three-Quarter-52753_ol.jpg?v=201711021421&q=80",
+    "engine": "4000cc",
+    "kilometers": "100,000 km",
+    "fuelType": "Petrol",
+    "transmission": "Automatic",
+    "vehicleType": "Wagon",
+    "seats": 5
+  },
+  "VW Golf VII": {
+    "image": "https://uskuper.com/wp-content/uploads/2022/06/golf_7.jpg",
+    "engine": "2000cc",
+    "kilometers": "50,000 km",
+    "fuelType": "Petrol",
+    "transmission": "Automatic",
+    "vehicleType": "Hatchback",
+    "seats": 5
+  },
+  "Honda Civic": {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7-DK92kpJ50N0ULytxDyrsyiVptEUI_4drw&usqp=CAU",
+    "engine": "1500c",
+    "kilometers": "95,000 km",
+    "fuelType": "Petrol",
+    "transmission": "Automatic",
+    "vehicleType": "Hatchback",
+    "seats": 5
+  },
+  "Toyota Supra": {
+    "image": "https://s1.1zoom.me/b4649/637/Toyota_Supra_Heritage_Edition_2019_GR_Supra_A90_577946_2560x1440.jpg",
+    "engine": "3000cc",
+    "kilometers": "45,000 km",
+    "fuelType": "Petrol",
+    "transmission": "Automatic",
+    "vehicleType": "Sports Car",
+    "seats": 2
+  },
+  "Porsche 911": {
+    "image": "https://edgecast-img.yahoo.net/mysterio/api/C0D6C1DEF7A746F748253FC7C242EAA5CDF6A2BC557574ABF99F13DA44087BBF/autoblog/resizefill_w660_h372;quality_80;format_webp;cc_31536000;/https://s.aolcdn.com/commerce/autodata/images/USD10PRC011A021001.jpg",
+    "engine": "6000cc",
+    "kilometers": "20,000km",
+    "fuelType": "Petrol",
+    "transmission": "Automatic",
+    "vehicleType": "Sports Car",
+    "seats": 2
+  },
+  "BMW M3 Wagon": {
+    "image": "https://i.gaw.to/content/photos/52/93/529302-voici-la-bmw-m3-touring-que-nous-n-aurons-pas.jpg?460x287",
+    "engine": "5000cc",
+    "kilometers": "150,000 km",
+    "fuelType": "Petrol",
+    "transmission": "Manual",
+    "vehicleType": "Wagon",
+    "seats": 5
+  },
+  "Peugeot 508 Sportwagon": {
+    "image": "https://regencycars.net/media/1130/508sw-thumb2.png",
+    "engine": "ENGINE_INFO_HERE",
+    "kilometers": "220,000 km",
+    "fuelType": "Diesel",
+    "transmission": "Automatic",
+    "vehicleType": "Wagon",
+    "seats": 6
+  },
+  "Jeep Trackhawk": {
+    "image": "https://d2bzx2vuetkzse.cloudfront.net/fit-in/0x450/unshoppable_producs/f03dac4f-f849-4135-873a-13c1379008c4.jpeg",
+    "engine": "6000cc",
+    "kilometers": "125,000 km",
+    "fuelType": "Petrol",
+    "transmission": "Automatic",
+    "vehicleType": "SUVs",
+    "seats": 6
+  },
+  "VW T-Cross": {
+    "image": "https://www.arnoldclark.com/cdn/images/volkswagen/t-cross/pure-white.png",
+    "engine": "1100cc",
+    "kilometers": "185,000 km",
+    "fuelType": "Diesel",
+    "transmission": "Manual",
+    "vehicleType": "SUVs",
+    "seats": 5
+  },
+  "Mercedes-AMG G63": {
+    "image": "https://s1.1zoom.me/big0/504/Brabus_G-Class_Mercedes-Benz_G63_800_W463_2020_580581_1280x854.jpg",
+    "engine": "5500cc",
+    "kilometers": "30,000km",
+    "fuelType": "Petrol",
+    "transmission": "Automatic",
+    "vehicleType": "SUVs",
+    "seats": 5
+  }
+}

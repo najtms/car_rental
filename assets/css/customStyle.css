@@ -85,7 +85,9 @@
 /*Glavna slika na main page bk*/
 .bg-image{
     background-image: url(https://www.topgear.com/sites/default/files/2023/05/32748-TTRSICONICDEANSMITH037_0.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 1rem; /* Set a fixed height for the container */
 }
 /* Glavni dio About background image auta in blurr*/
 .bg-imageabout{
@@ -172,4 +174,11 @@
     text-align: center;
     width: 280px;
     height: 180px;
+}
+
+.img-wh{
+        width: 100% !important;
+        height: auto !important;
+        max-width: 278px !important;
+        max-height: 150px !important;
 }

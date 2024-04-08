@@ -1,0 +1,272 @@
+[
+  {
+    "Vehicle": "Toyota Camry",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-01",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Honda Civic",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-04-02",
+    "Status": "DENIED"
+  },
+  {
+    "Vehicle": "Ford F-150",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-03",
+    "Status": "IN PROCESS"
+  },
+  {
+    "Vehicle": "VW Golf IV",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-05-18",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Chevrolet Tahoe",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-05",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "BMW X5",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-04-06",
+    "Status": "DENIED"
+  },
+  {
+    "Vehicle": "Audi A4",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-07",
+    "Status": "IN PROCESS"
+  },
+  {
+    "Vehicle": "Mercedes-Benz E-Class",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-04-08",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Nissan Altima",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-09",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Volvo XC90",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-04-10",
+    "Status": "DENIED"
+  },
+  {
+    "Vehicle": "Hyundai Elantra",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-11",
+    "Status": "IN PROCESS"
+  },
+  {
+    "Vehicle": "Kia Sportage",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-04-12",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Subaru Outback",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-13",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Mazda CX-5",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-04-14",
+    "Status": "DENIED"
+  },
+  {
+    "Vehicle": "Porsche Cayenne",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-15",
+    "Status": "IN PROCESS"
+  },
+  {
+    "Vehicle": "Jeep Wrangler",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-04-16",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Lexus RX",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-17",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Land Rover Discovery",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-04-18",
+    "Status": "DENIED"
+  },
+  {
+    "Vehicle": "Jaguar F-PACE",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-19",
+    "Status": "IN PROCESS"
+  },
+  {
+    "Vehicle": "GMC Acadia",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-04-20",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Infiniti QX60",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-21",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Buick Enclave",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-04-22",
+    "Status": "DENIED"
+  },
+  {
+    "Vehicle": "Cadillac XT5",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-23",
+    "Status": "IN PROCESS"
+  },
+  {
+    "Vehicle": "Acura MDX",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-04-24",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Lincoln Aviator",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-25",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Chrysler Pacifica",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-04-26",
+    "Status": "DENIED"
+  },
+  {
+    "Vehicle": "Dodge Durango",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-27",
+    "Status": "IN PROCESS"
+  },
+  {
+    "Vehicle": "Volkswagen Atlas",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-04-28",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Porsche Macan",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-04-29",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Alfa Romeo Stelvio",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-04-30",
+    "Status": "DENIED"
+  },
+  {
+    "Vehicle": "Maserati Levante",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-05-01",
+    "Status": "IN PROCESS"
+  },
+  {
+    "Vehicle": "Ferrari Portofino",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-05-02",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Lamborghini Urus",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-05-03",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Rolls-Royce Cullinan",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-05-04",
+    "Status": "DENIED"
+  },
+  {
+    "Vehicle": "Bentley Bentayga",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-05-05",
+    "Status": "IN PROCESS"
+  },
+  {
+    "Vehicle": "Maybach GLS",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-05-06",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Aston Martin DBX",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-05-07",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Porsche Taycan",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-05-08",
+    "Status": "DENIED"
+  },
+  {
+    "Vehicle": "Koenigsegg Gemera",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-05-09",
+    "Status": "IN PROCESS"
+  },
+  {
+    "Vehicle": "Bugatti Chiron",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-05-10",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "McLaren GT",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-05-11",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Ferrari SF90 Stradale",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-05-12",
+    "Status": "DENIED"
+  },
+  {
+    "Vehicle": "Lamborghini Huracan Evo",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-05-13",
+    "Status": "IN PROCESS"
+  },
+  {
+    "Vehicle": "Pagani Huayra",
+    "Location of Vehicle": "Tuzla International Airport",
+    "Date": "2024-05-14",
+    "Status": "APPROVED"
+  },
+  {
+    "Vehicle": "Lotus Evija",
+    "Location of Vehicle": "Sarajevo International Airport",
+    "Date": "2024-05-15",
+    "Status": "APPROVED"
+  }
+]
