@@ -155,11 +155,29 @@ referrerpolicy="no-referrer"
             $(element).closest(".form-outline").removeClass("error");
         },
         submitHandler: function(form) {
-            var formData = $(form).serialize();
-            
-            console.log("Form data:", formData);
-
-        }
+          var formData = {
+            email: $("#email").val(),
+            username: $("#username").val(),
+            password: $("#password").val()
+          };
+          
+          $.ajax({
+              url: "rest/add_user.php", // Replace with the URL of your server-side script
+              type: "POST",
+              data: formData,
+              success: function(response) {
+                  console.log("Response from server:", response);
+                  window.location = "#login";
+              },
+              error: function(xhr, status, error) {
+                  console.error("Error:", error);
+                  console.errer(formData)
+                  // ERROR for not logging in  $("#error-message").text("An error occurred. Please try again later.").show();
+                  //<div id="error-message" class="alert alert-danger" style="display: none;"></div> put this somewhere??
+                  
+              }
+          });
+      }
     });
 });
 
