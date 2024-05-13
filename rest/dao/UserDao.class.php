@@ -26,9 +26,9 @@ class UserDao extends BaseDao
     {
         $statement = $this->connection->prepare("SELECT * FROM user WHERE username = ?");
         $statement->execute([$username]);
-        $user = $statement->fetch(); // Assuming you want to fetch as associative array
+        $user = $statement->fetch();
 
-        return $user; // This will return the user information if found, or false if not found
+        return $user;
     }
 
     public function delete_user($id)
@@ -38,8 +38,20 @@ class UserDao extends BaseDao
     {
         $statement = $this->connection->prepare("SELECT * FROM user WHERE email = ?");
         $statement->execute([$email]);
-        $user = $statement->fetch(); // Assuming you want to fetch as associative array
+        $user = $statement->fetch();
 
-        return $user; // This will return the user information if found, or false if not found
+        return $user;
+    }
+    public function updateById($id, $updateData)
+    {
+        $sql = "UPDATE user SET username = :username, email = :email WHERE id = :id";
+        $stmt = $this->connection->prepare($sql);
+
+        // Execute the update
+        $result = $stmt->execute([
+            ':username' => $updateData['username'],
+            ':email' => $updateData['email'],
+            ':id' => $id
+        ]);
     }
 }

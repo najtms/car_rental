@@ -22,9 +22,7 @@ class BaseDao
                 ]
             );
         } catch (PDOException $e) {
-            // Output error message
             echo "Database connection error: " . $e->getMessage();
-            // Throw the exception to propagate it further if needed
             throw $e;
         }
     }
