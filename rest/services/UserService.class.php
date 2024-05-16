@@ -14,12 +14,8 @@ class UserService
     public function add_user($user)
     {
         try {
-            // Validate user data (if needed)
-
-            // Add user using UserDao
             return $this->user_dao->add_user($user);
         } catch (Exception $e) {
-            // Log the error or handle it appropriately
             throw new Exception("Error adding user: " . $e->getMessage(), $e->getCode());
         }
     }
@@ -32,5 +28,16 @@ class UserService
     public function get_email($email)
     {
         return $this->user_dao->get_email($email);
+    }
+
+
+    public function update($id, $updateData)
+    {
+        if (!isset($updateData['username']) || !isset($updateData['email'])) {
+            throw new Exception('Name and email are required fields');
+        }
+
+
+        $this->user_dao->updateById($id, $updateData);
     }
 }

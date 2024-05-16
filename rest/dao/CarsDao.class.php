@@ -1,17 +1,16 @@
 <?php
 
-require_once __DIR__ . '/BaseDao.php'; // Assuming BaseDao provides database connection
+require_once __DIR__ . '/BaseDao.php';
 
 class CarsDao extends BaseDao
 {
     public function __construct()
     {
-        parent::__construct('cars'); // Replace 'cars' with your actual table name
+        parent::__construct('cars');
     }
 
     public function add_car($cars)
     {
-        // Validate car data (optional, enhance based on your requirements)
         if (
             empty($cars['car']) || empty($cars['engine']) ||
             empty($cars['kilometers']) || empty($cars['fueltype']) ||
@@ -32,7 +31,6 @@ class CarsDao extends BaseDao
             throw new Exception("Car with the name '" . $cars['car'] . "' already exists");
         }
 
-        // Insert data if no duplicates found (existing code)
         $query = "INSERT INTO cars (car, engine, kilometers, fueltype, transmissions, seats, cartype, imgurl)
                   VALUES (:car, :engine, :kilometers, :fueltype, :transmissions , :seats, :cartype, :imgurl)";
         $statement = $this->connection->prepare($query);
@@ -50,7 +48,7 @@ class CarsDao extends BaseDao
 
 
         if ($statement->execute()) {
-            return $cars; // Optional: return the inserted data
+            return $cars;
         } else {
             throw new Exception("Error adding car to database");
         }
@@ -63,9 +61,9 @@ class CarsDao extends BaseDao
     }
     public function get_car($car_id)
     {
-        $query = "SELECT * FROM cars WHERE car = :car"; // Modified query parameter name
+        $query = "SELECT * FROM cars WHERE car = :car";
         $statement = $this->connection->prepare($query);
-        $statement->bindParam(':car', $car_id); // Modified parameter name
+        $statement->bindParam(':car', $car_id);
         $statement->execute();
 
         $result = $statement->fetch(PDO::FETCH_ASSOC);
@@ -76,13 +74,11 @@ class CarsDao extends BaseDao
         $query = "UPDATE cars SET ";
         $params = [];
 
-        // Build dynamic update query based on provided data
         foreach ($data as $key => $value) {
             $query .= "`$key` = :$key, ";
             $params[":$key"] = $value;
         }
 
-        // Remove trailing comma from query
         $query = rtrim($query, ', ');
         $query .= " WHERE car_id = :car_id";
         $params[":car_id"] = $car_id;

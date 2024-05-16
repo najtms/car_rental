@@ -202,27 +202,27 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form id="contactForm">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Full name</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Phone number</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
@@ -236,7 +236,7 @@
                             </div>
 
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                            <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
                         </form>
                     </div>
                 </div>
@@ -271,6 +271,35 @@
             }
             </script>
             <script>
+
+                $(document).ready(function() {
+                    $('#contactForm').submit(function(event) {
+                
+                        var formData = {name: $("#name").val(),
+                        email: $("#email").val(),phone: $("#phone").val(),message: $("#message").val()
+                    };
+                
+                        $.ajax({
+                            url: 'form/addtest', // URL of your Flight route
+                            type: 'POST',
+                            data: formData,
+                            success: function(response) {
+                                if (response.message) {
+                                    $('#submitSuccessMessage').show(); // Show success message
+                                    $('#contactForm').trigger('reset'); // Clear the form
+                                } else {
+                                    $('#submitErrorMessage').show(); // Show error message
+                                }
+                            },
+                            error: function(xhr, status, error) {
+                                console.error(error);
+                                $('#submitErrorMessage').show(); // Show generic error
+                            }
+
+                        });
+                    });
+                });
+                //
                 $(document).ready(function() {
                     $('#carModal').on('show.bs.modal', function(event) {
                         var button = $(event.relatedTarget);
@@ -311,6 +340,9 @@
                   document.getElementById("SubmitTwo").innerHTML = "Reservation sent!"
                       document.getElementById("SubmitTwo").style.background = "Green";
                            }
+        
+
+
           </script>
         
         <div class="modal fade" id="carModal" tabindex="-1" aria-labelledby="carModalLabel" aria-hidden="true">
@@ -413,12 +445,3 @@
               </div>
             </div>
             </div>
-        
-        
-        
-        
-        
-        
-
-    </body>
-</html>
